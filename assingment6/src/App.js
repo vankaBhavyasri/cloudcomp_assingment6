@@ -27,7 +27,7 @@ class App extends Component {
 alertgetdata() {
  console.log('data pull has been triggered') 
  this.setState({render: !this.state.render});
-    fetch("https://data.kcmo.org/resource/98fz-2jyt.json?zipcode=64109")
+    fetch("https://data.kcmo.org/resource/98fz-2jyt.json")
 	.then(result => result.json())
       .then(
         (result) => {
